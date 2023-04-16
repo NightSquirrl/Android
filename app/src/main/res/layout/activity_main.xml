@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+    <!--title-->
+    <TextView
+        android:textColor="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/txt_rectborder"
+        android:gravity="center"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:text="@string/login_interface"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:gravity="center"
+        android:text="User Login" />
+    <!--用户名 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="User Name :" />
+
+        <EditText
+            android:id="@+id/user_name"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:background="@drawable/editor_select"
+            android:maxLength="11"
+            android:layout_marginLeft="20dp"
+            />
+    </LinearLayout>
+    <!--密码 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="Password :" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:background="@drawable/editor_select"
+            android:layout_marginLeft="20dp"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="#0000ff"
+        android:textColor="#ffffff"
+        android:text="Login" />
+
+<!--    <com.example.practise.MNView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="#0000ff"-->
+<!--        app:mnv_text="dasdas212d"/>-->
+    <com.example.practise.item_view
+        android:id="@+id/txt1"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:left_icon="@drawable/microphone"
+        app:left_title="first recorder"
+        app:right_text="09:20"
+        app:right_text_color="#0085f9"
+        app:right_text_duration="00:36:56"
+        app:show_bottom_line="true"/>
+
+    <com.example.practise.item_view
+        android:id="@+id/txt2"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:left_icon="@drawable/microphone"
+        app:left_title="first recorder"
+        app:right_text="20:40"
+        app:right_text_color="#0085f9"
+        app:right_text_duration="00:01:26"
+        app:show_bottom_line="true"/>
+
+
+</LinearLayout>
